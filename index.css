@@ -1,20 +1,5 @@
-/* body {
-  font-family: sans-serif;
-  background-color: whitesmoke;
+#listcontainer #li{
+  border: 1px solid black;
+
+  text-decoration-line: line-through;
 }
-section {
-  margin: auto;
-  width: 40vw;
-  height: 80vh;
-  border: 2px solid black;
-  border-radius: 10px;
-}
-#title{
-  text-align: center;
-  width: 100%;
-  color: white;
-  background-color: black;
-  font-weight: 900;
-  font-size: 30px;
-  border-radius: inherit;
-} */

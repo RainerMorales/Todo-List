@@ -2,36 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Todo-List</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-
-<body class="bg-gray-950">
-    <header  class="fixed flex justify-between text-sm opacity-60 w-full p-4 text-white text-right text-md top-0">
-        <div id="good">h</div>
-        <div id="times"></div>
-    </header>
-    <section class=" mt-16 border-4 border-gray-900 text-center max-w-4xl m-auto rounded-md">
-        <h1 class="bg-gray-900 gap-2 font-bold text-2xl flex justify-center items-center text-white p-4">
-            To-Do List<span> &#128214;</span>
+<body class="" id="body">
+    <header class="flex justify-around bg-zinc-900">
+        <h1 class="gap-2 font-bold text-xl text-white p-4 ">
+            <span class=""> &#128214;</span> To-Do List
         </h1>
-        <div class="flex justify-around text-white p-10  border-white">
-            <input id="text1" class="border-1 w-md border-gray-900 rounded p-2" required placeholder="Add Here..."
-                type="text">
+        <div class=" flex items-center">
+            <button onclick="clears()" class="bg-zinc-500 text-white text-sm p-2 rounded-sm">
+                Delete All
+            </button>
         </div>
-        <div class="text-white">
-            <ul id="ul" class="">
-                <li id="li"></li>
-            </ul>
+    </header>
+    <section class="text-center max-w-md  m-auto rounded-md shadow-md ">
+        <div class="flex  max-w-md   m-auto border-black justify-between text-white p-8">
+            <div><input id="inputs" class="border-1 border-zinc-400 text-black  rounded p-2" required placeholder="add here"
+                    type="text" /></div>
+            <button id="add" class="bg-zinc-900 text-white p-2 w-24 rounded-sm">Add</button>
         </div>
+        <ul id="ul" class="text-black text-left">
+            
+        </ul>  
     </section>
-    <footer id="foots" class="text-white  w-full text-center p-10 text-md  fixed bottom-0 opacity-50 ">
-        
-    </footer>
+    <footer id="foots" class="text-black w-full text-center p-10 text-md fixed bottom-0 opacity-50"></footer>
 </body>
-<script src="add.js"></script>
+<script src="index.js"></script>
 
 </html>
